@@ -5,17 +5,24 @@ namespace CreateClass
 {
     public class Employee : Person
     {
-        private string Profession;
+        private readonly string Profession;
         private int Salary { get; set; }
-        public Employee(string name, DateTime birthDate, Enum gender, int salary, string profession) : base(name, birthDate, gender)
+        private Room room;
+        public Employee(string name, DateTime birthDate, Enum gender, int salary, string profession, Room room) : base(name, birthDate, gender)
         {
             this.Salary = salary;
             this.Profession = profession;
+            this.room = room;
         }
 
         public override string ToString()
         {
-            return $"Name: {base.Name}\nBirthdate: {base.BirthDate}\nGender: {base.Gender}\nProfession: {this.Profession}\nSalary:{this.Salary}";
+            return $"Name: {base.Name}\n" +
+                   $"Birthdate: {base.BirthDate}\n" +
+                   $"Gender: {base.Gender}\n" +
+                   $"Profession: {this.Profession}\n" +
+                   $"Salary:{this.Salary} HUF\n" +
+                   $"Room: {this.room.Number}";
 
         }
     }
