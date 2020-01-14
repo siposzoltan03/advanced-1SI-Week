@@ -24,9 +24,11 @@ namespace CreateClass
         {
             Person male = new Person("Mike", new DateTime(1990, 12, 14), CreateClass.Gender.Male);
             Person female = new Person("Katy", new DateTime(1984, 04, 21), CreateClass.Gender.Female);
+            var firstEmploye = new Employee("Lölö", new DateTime(1900, 01, 01),CreateClass.Gender. Male, Int32.MaxValue, "Gas-fitter" );
 
             Console.WriteLine(male.ToString());
             Console.WriteLine(female.ToString());
+            Console.WriteLine(firstEmploye.ToString());
         }
     }
 }
