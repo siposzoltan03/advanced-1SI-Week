@@ -4,9 +4,9 @@ namespace CreateClass
 {
     public class Person
     {
-        private string Name;
-        private DateTime BirthDate;
-        private Enum Gender;
+        protected string Name;
+        protected DateTime BirthDate;
+        protected Enum Gender;
 
         public Person(string name, DateTime birthDate, Enum gender)
         {
