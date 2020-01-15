@@ -3,16 +3,17 @@ using System.Dynamic;
 
 namespace CreateClass
 {
-    public class Employee : Person
+    public class Employee : Person, ICloneable
     {
+
         private readonly string Profession;
         private int Salary { get; set; }
-        private Room room;
-        public Employee(string name, DateTime birthDate, Enum gender, int salary, string profession, Room room) : base(name, birthDate, gender)
+        public Room Room = new Room();
+
+        public Employee(string name, DateTime birthDate, Enum gender, int salary, string profession) : base(name, birthDate, gender)
         {
             this.Salary = salary;
             this.Profession = profession;
-            this.room = room;
         }
 
         public override string ToString()
@@ -22,8 +23,13 @@ namespace CreateClass
                    $"Gender: {base.Gender}\n" +
                    $"Profession: {this.Profession}\n" +
                    $"Salary:{this.Salary} HUF\n" +
-                   $"Room: {this.room.Number}";
+                   $"Room:{this.Room.Number}\n";
 
+        }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
         }
     }
 }

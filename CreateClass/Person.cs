@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace CreateClass
 {
@@ -8,7 +9,7 @@ namespace CreateClass
         protected DateTime BirthDate;
         protected Enum Gender;
 
-        public Person(string name, DateTime birthDate, Enum gender)
+        protected Person(string name, DateTime birthDate, Enum gender)
         {
             this.Name = name;
             this.BirthDate = birthDate;
@@ -24,12 +25,13 @@ namespace CreateClass
         {
             Person male = new Person("Mike", new DateTime(1990, 12, 14), CreateClass.Gender.Male);
             Person female = new Person("Katy", new DateTime(1984, 04, 21), CreateClass.Gender.Female);
-            var room = new Room(23);
-            var firstEmploye = new Employee("Lölö", new DateTime(1900, 01, 01),CreateClass.Gender. Male, Int32.MaxValue, "Gas-fitter", room );
+            Employee employee = new Employee("Lölö", new DateTime(1900, 01, 01), CreateClass.Gender.Male, Int32.MaxValue, "Gas-fitter");
+            employee.Room.Number = 110;
+
 
             Console.WriteLine(male.ToString());
             Console.WriteLine(female.ToString());
-            Console.WriteLine(firstEmploye.ToString());
+            Console.WriteLine(employee.ToString());
         }
     }
 }
