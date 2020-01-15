@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateClass", "CreateClass\CreateClass.csproj", "{5247E487-2AB6-4976-AF6B-79C0A7F59AA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerEvents", "TimerEvents\TimerEvents.csproj", "{E33ACE2C-8601-4067-9462-2A4F08CB5279}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,12 @@ Global
 		{5247E487-2AB6-4976-AF6B-79C0A7F59AA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5247E487-2AB6-4976-AF6B-79C0A7F59AA0}.Run without debugging|Any CPU.ActiveCfg = Run without debugging|Any CPU
 		{5247E487-2AB6-4976-AF6B-79C0A7F59AA0}.Run without debugging|Any CPU.Build.0 = Run without debugging|Any CPU
+		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Run without debugging|Any CPU.ActiveCfg = Release|Any CPU
+		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Run without debugging|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
