@@ -28,10 +28,15 @@ namespace CreateClass
             Employee employee = new Employee("Lölö", new DateTime(1900, 01, 01), CreateClass.Gender.Male, Int32.MaxValue, "Gas-fitter");
             employee.Room.Number = 110;
 
+            Employee employeeClone = (Employee) employee.Clone();
+            employeeClone.Room.Number = 120;
+
+
 
             Console.WriteLine(male.ToString());
             Console.WriteLine(female.ToString());
             Console.WriteLine(employee.ToString());
+            Console.WriteLine(employeeClone.ToString());
         }
     }
 }
