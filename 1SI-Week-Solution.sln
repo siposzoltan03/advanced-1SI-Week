@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateClass", "CreateClass\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerEvents", "TimerEvents\TimerEvents.csproj", "{E33ACE2C-8601-4067-9462-2A4F08CB5279}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortString", "SortString\SortString.csproj", "{E6A1209E-7520-4A81-8D17-D7EA1E244797}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,12 @@ Global
 		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Run without debugging|Any CPU.ActiveCfg = Release|Any CPU
 		{E33ACE2C-8601-4067-9462-2A4F08CB5279}.Run without debugging|Any CPU.Build.0 = Release|Any CPU
+		{E6A1209E-7520-4A81-8D17-D7EA1E244797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A1209E-7520-4A81-8D17-D7EA1E244797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A1209E-7520-4A81-8D17-D7EA1E244797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A1209E-7520-4A81-8D17-D7EA1E244797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A1209E-7520-4A81-8D17-D7EA1E244797}.Run without debugging|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A1209E-7520-4A81-8D17-D7EA1E244797}.Run without debugging|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
